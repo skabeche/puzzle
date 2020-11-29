@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Jigsaw Puzzle | Dan Alcaide</title>
+<meta name="author" content="Dan Alcaide">
+<meta name="description" content="Jigsaw Puzzle by Dan Alcaide">
+
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous">
+<link href="css/animation.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+
+<script src="js/puzzle.js"></script>
+<script src="js/scripts.js"></script>
+
+</head>
+
+<body>
+  <div id="container">
+
+    <header id="home">
+      <div id="home-content">
+        <div id="logo">
+          <h1>Jigsaw Puzzle</h1>
+          <h2>by Dan Alcaide</h2>
+        </div>
+        <div class="home-content-desc">
+          <p>Puzzles are fun ways to pass the time that also provide a challenge for our brains. Choose the difficulty level and the image you prefer, enjoy!</p>
+          <p>
+            <form name="formlevel" id="form-level">
+              <label>
+                <input type="radio" name="level" value="4" checked="checked">
+                <span>Easy (4 pieces)</span>
+              </label>
+              <label>
+                <input type="radio" name="level" value="9">
+                <span>Normal (9 pieces)</span>
+              </label>
+              <label>
+                <input type="radio" name="level" value="16">
+                <span>Hard (16 pieces)</span>
+              </label>
+            </form>
+          </p>
+          <p>
+            <form name="formpicture" id="form-picture">
+              <label>
+                <input type="radio" name="picture" value="images/puzzle/skizophonic.jpg" checked="checked">
+                <img src="images/puzzle/skizophonic.jpg" alt="picture 1">
+              </label>
+              <!-- <label>
+                <input type="radio" name="picture" value="images/puzzle/vegetables.jpg">
+                <img src="images/puzzle/vegetables.jpg" alt="picture 2">
+              </label> -->
+              <label>
+                <input type="radio" name="picture" value="images/puzzle/led_zeppelin.jpg">
+                <img src="images/puzzle/led_zeppelin.jpg" alt="picture 2">
+              </label>
+              <label>
+                <input type="radio" name="picture" value="images/puzzle/nirvana.jpg">
+                <img src="images/puzzle/nirvana.jpg" alt="picture 3">
+              </label>
+              <label>
+                <input type="radio" name="picture" value="images/puzzle/bowie.jpg">
+                <img src="images/puzzle/bowie.jpg" alt="picture 4">
+              </label>
+            </form>
+          </p>
+        </div>
+         <p><a id="start" href="#content" accesskey="0" class="anim-bounce arrow">Start</a></p>
+      </div>
+    </header>
+
+    <div id="content">
+
+      <section id="puzzle">
+        <h3>Puzzle</h3>
+
+        <nav id="menu">
+          <ul>
+            <li><a id="new-game-link" href="#home" accesskey="1">New game</a></li>
+            <li><a id="picture-original-link" href="#" accesskey="2">Toggle solution</a></li>
+            <li><a id="shuffle-link" href="#" accesskey="3">Shuffle</a></li>
+          </ul>
+        </nav>
+
+        <div id="puzzle-picture-original" class="hide">
+          <p>No image</p>
+        </div>
+
+        <div id="puzzle-game-original">
+          <p>Please, start a new game</p>
+        </div>
+        <div id="puzzle-game-grid">
+          <p>No puzzle</p>
+        </div>
+      </section>
+
+    </div>
+
+    <footer>
+      <p>&copy; 2020 Dan Alcaide <a href="http://www.danalcaide.com">www.danalcaide.com</a></p>
+      <p>Made with <span class="icon-love"></span> and <span class="icon-music"></span></p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

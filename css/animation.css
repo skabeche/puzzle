@@ -1,0 +1,30 @@
+/**
+ * -------------------------------------------------------------
+ *  DAN ALCAIDE www.danalcaide.com
+ *  Jigsaw Puzzle
+ * -------------------------------------------------------------
+ *  Author:     Dan Alcaide
+ *  Desc.:      Animation CSS
+ *  Date:       07 May, 2019
+ * -------------------------------------------------------------
+ */
+
+.anim-bounce::after {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-25px);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
+}
